@@ -1,8 +1,3 @@
-Samajh gaya — problem ye hai ki README ke andar khud bhi ``` ``` (code blocks) hain, aur maine pura README ek aur bade ``` ``` ke andar wrap kar diya tha — isliye pehla internal ``` aate hi block "toot" gaya lag raha hai.
-
-Fix: neeche jo content hai use **bina kisi outer wrapping ke** seedha copy karo (ye already valid Markdown hai, tumhari `.md` file ke andar jaake sahi render hoga):
-
----
 
 # AI-Powered Homework Generator with Analytics
 
