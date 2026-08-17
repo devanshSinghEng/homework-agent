@@ -8,6 +8,15 @@ st.title("AI Homework Generator - Analytics Dashboard")
 st.write("Tracking AI-generated homework sheets from handwritten class notes.")
 
 conn = sqlite3.connect("homework_tracker.db")
+conn.execute("""
+    CREATE TABLE IF NOT EXISTS homework_log (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        source_pdf TEXT,
+        topic TEXT,
+        num_questions INTEGER,
+        generated_on TEXT
+    )
+""")
 df = pd.read_sql_query("SELECT * FROM homework_log", conn)
 conn.close()
 
