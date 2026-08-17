@@ -1,0 +1,10 @@
+.env
+venv
+__pycache__/
+*.pyc
+homework_output.docx
+homework_tracker.db
+test_page.png
+topic_chart.png
+pdf2.pdf
+pdf3.pdf
